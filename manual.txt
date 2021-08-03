@@ -1,0 +1,47 @@
+cd.. #뒤로가기
+
+git init # 폴더에 git 확인하기 or 넣어주기
+
+git status # untracked files 출력되면 git에 추가해야한다.
+
+git add (파일이름) # 파일이름은 탭 눌러서 추가할수도 있다.
+
+git add -A # 폴더안에있는 모든 항목을 넣어준다.
+
+git status 다시 명령해서 파랗게 뜨면 git이 관리하는 항목이 됐다.
+하지만 아직 완벽히 관리하는건 아니다.
+
+git commit -m "First Commit" # First Commit 가 위의 add 해준 파일의 주석이 된다.
+
+git commit -m "Second Commit" # 다음 주석은 이렇게 설정해줄수있다.
+
+git config --list # 이름이랑 메일 확인 가능
+
+user.name=eunvi
+user.email=posina0620@naver.com
+
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main # 가지고 있는 branch 개념 알아야함.
+git remote add origin https://github.com/eunvi/test.git # 이거 입력해서 아무것도 안뜨면 연결됐다는 뜻
+git push -u origin master # 입력하면 인터넷 선택or연결확인하기
+
+new branch #main 아니고 master 해야한다. # 우리조는 main
+push # 원격저장소에 밀어넣어준다는 의미다.
+지금까지 로컬 저장소에 저장했는데 원격저장소에 저장해준다.
+
+git clone
+
+git branch # 브랜치 확인가능
+git checkout (이름) # 브랜치왔다갔다 가능하다. # 브랜치 생성도가능
+
+
+git push --set-upstream origin #지금까지 로컬만해줘서 깃허브 원격저장소에도 밀어넣어준다.
+
+git push origin eunvi
+
+git pull origin main # main 으로 가져온다. merge 해준거 다운받기
+
+
